@@ -1,17 +1,12 @@
 public class Banco {
-    public static void main(String[] args) throws Exception {
-        
-      Cliente cliente = new Cliente();
-      
-      System.err.println("nome do cliente " + cliente.nome);
+    public static void main(String[] args) {
+        Cliente cliente = new Cliente();
 
-      System.err.println("idade do cliente " + cliente.agencia);
+        System.out.println("Nome do cliente: " + cliente.getNome());
+        System.out.println("Agência: " + cliente.getAgencia());
+        System.out.println("Número da conta: " + cliente.getConta());
+        System.out.println("Saldo: " + cliente.getSaldo());
 
-      System.err.println("salario " + cliente.conta);
-
-      System.err.println("salario " + cliente.saldo);
-
-      
-
+        System.out.println("Conta criada com sucesso!");
     }
 }

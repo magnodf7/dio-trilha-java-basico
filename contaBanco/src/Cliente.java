@@ -1,25 +1,42 @@
+import java.util.Scanner;
+
 public class Cliente {
-    String nome= "PedroBarros";
-    String agencia= "caixa casa amarela";
-    int conta = 1234;
-    double saldo =1.458
+    private String nome;
+    private String agencia;
+    private int conta;
+    private double saldo;
 
-   /*  public void nome(){
-        System.out.println("O cliente");
+    public Cliente() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o nome do cliente: ");
+        this.nome = scanner.nextLine();
+
+        System.out.print("Digite a agência: ");
+        this.agencia = scanner.nextLine();
+
+        System.out.print("Digite o número da conta: ");
+        this.conta = scanner.nextInt();
+
+        System.out.print("Digite o saldo: ");
+        this.saldo = scanner.nextDouble();
+
+        scanner.close();
     }
 
-    
-    public void outro(){
-        System.out.println("O cliente");
+    public String getNome() {
+        return nome;
     }
-    //continuar com os metodos
 
-    public void salarioAumentou(){
-        System.out.println("salario ");
+    public String getAgencia() {
+        return agencia;
     }
-    
-    public void salarioAbaixou(){
-        System.out.println("salario ");
-    }*/
+
+    public int getConta() {
+        return conta;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
 }
-
